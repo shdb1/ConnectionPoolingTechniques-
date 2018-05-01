@@ -110,7 +110,7 @@ Context environmentContext = (Context) initialContext
   
  2) Spring Application:-
  
- Either its and Spring web application or standalone application , basic things is we need to have ready object of datasource . We can can ask spring container to create datasource object and then we can use the same data source object anywhere :
+ Either its a Spring web application or standalone application , basic things is we need to have ready object of datasource . We can can ask spring container to create datasource object and then we can use the same data source object anywhere :
  i could see following cases where we could use the DataSource object directly:-
  
  a) it can be passed to jdbc template(if we are using sprinh jdbc template for connections)
