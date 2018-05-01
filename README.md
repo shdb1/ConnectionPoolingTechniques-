@@ -55,7 +55,7 @@ Under the package javax.sql we do have DataSource Interface with following metho
 1.Java Web Application:-
 
 If you are on a java webapplication and using Tomcat Server then you can configure using context.xml file. 
-
+/**
 <?xml version='1.0' encoding='utf-8'?>
 ...
   <GlobalNamingResources>
@@ -77,6 +77,8 @@ If you are on a java webapplication and using Tomcat Server then you can configu
 			  defaultAutoCommit="true" />
      ...
   </GlobalNamingResources>'
+  
+  **/
   
   
 We have configured a resource which will be available globally throughout the application.
