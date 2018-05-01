@@ -32,7 +32,7 @@ Being a java developer we have seen DriverManager to get connection always but w
 
 Data source also a way to get DB connection how we do get from DrivareManger . While we create the connection we do provide connection URL and request DriverManager to provide the connections. on each request we do get a connection from DriverManager. But if we want to think something as factory of connections then DataSource is the option.
 
-DriverManagers are implementaed almost by all DB vendors , for DataSource we do have vendors like apache,hikari and c3p0 etc.
+DriverManagers are implementaed almost by all DB vendors(MySQL,Oracle,PostgreSQL etc.) , for DataSource we do have vendors like apache,hikari and c3p0 etc.
 
 Under the package javax.sql we do have DataSource Interface with following methods
 
@@ -110,8 +110,9 @@ Context environmentContext = (Context) initialContext
   
  2) Spring Application:-
  
- Either its a Spring web application or standalone application , basic things is we need to have ready object of datasource . We can can ask spring container to create datasource object and then we can use the same data source object anywhere :
- i could see following cases where we could use the DataSource object directly:-
+ Either its a Spring web application or standalone application , basic things is we need to have ready object of datasource . We can ask spring container to create datasource object and then we can use the same data source object anywhere :
+
+I could see following cases where we can use the DataSource object directly:-
  
  a) it can be passed to jdbc template(if we are using sprinh jdbc template for connections)
  b) it can be passed to hibernate configurataion if we are uing hibernate as ORM.
